@@ -20,17 +20,17 @@ export default function AppSideBar() {
         },
         {
             label: "Projects",
-            to:"/projects",
+            to:"manoj-portfolio/projects",
             icon: Projector,
         },
         {
             label: "About",
-            to:"/about",
+            to:"manoj-portfolio/about",
             icon: Info,
         },
         {
             label: "Contact",
-            to:"/contact",
+            to:"manoj-portfolio/contact",
             icon: CircleUser,
         },
     ]

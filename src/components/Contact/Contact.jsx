@@ -99,7 +99,7 @@ export default function Contact() {
                 <div className='flex gap-2'>
                     <Info className={`size-8`}/>
                     <Button variant='link'>
-                        <Link to='/about'>
+                        <Link to='manoj-portfolio/about'>
                             Know More About Me
                         </Link>
                     </Button>
