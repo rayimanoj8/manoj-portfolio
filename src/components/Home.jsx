@@ -40,7 +40,7 @@ export default function Home() {
                 }
             </div>
             <Button variant='link'>
-                <Link to='manoj-portfolio/about'>
+                <Link to='/manoj-portfolio/about'>
                     Know More About Me <ExternalLink className={'inline ml-2 hover:scale-105'}/>
                 </Link>
             </Button>

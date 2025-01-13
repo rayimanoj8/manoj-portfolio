@@ -15,22 +15,22 @@ export default function AppSideBar() {
     const arr = [
         {
             label: "Home",
-            to:"/",
+            to:"/manoj-portfolio",
             icon: Home,
         },
         {
             label: "Projects",
-            to:"manoj-portfolio/projects",
+            to:"/manoj-portfolio/projects",
             icon: Projector,
         },
         {
             label: "About",
-            to:"manoj-portfolio/about",
+            to:"/manoj-portfolio/about",
             icon: Info,
         },
         {
             label: "Contact",
-            to:"manoj-portfolio/contact",
+            to:"/manoj-portfolio/contact",
             icon: CircleUser,
         },
     ]
