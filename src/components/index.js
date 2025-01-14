@@ -9,8 +9,9 @@ import servicenow from '@/images/skills/servicenow.png';
 import flask from '@/images/skills/flask.png';
 import django from '@/images/skills/django.png';
 import spring from '@/images/skills/springboot.png'
+import {Github, FileUser, Linkedin, Mail, Code, Instagram, Info} from 'lucide-react';
 
-export const arr = [
+const arr = [
     {
         img:html
         ,tooltip:"html"
@@ -56,3 +57,6 @@ export const arr = [
         ,tooltip:"django"
     }
 ];
+
+
+export {arr, Github, FileUser, Linkedin, Mail, Code, Instagram, Info}

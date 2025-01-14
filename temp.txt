@@ -1,0 +1,10 @@
+<form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="99cf474f-d5e1-407b-8125-4b4be7397869" />
+
+            {/*<input type='email' name="email" required />*/}
+            <Input type="email" name="email" placeholder='enter your mail' required />
+            {/*<input type='text' name="name" required />*/}
+            <Input type="text" name="name" placeholder='enter your name' required />
+            <Textarea placeholder="Type your message here." />
+
+</form>
