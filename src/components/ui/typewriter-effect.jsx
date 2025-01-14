@@ -35,7 +35,7 @@ export const TypewriterEffect = ({
 
   const renderWords = () => {
     return (
-      (<motion.div ref={scope} className="inline">
+      (<motion.div ref={scope} className="inline text-center">
         {wordsArray.map((word, idx) => {
           return (
             (<div key={`word-${idx}`} className="inline-block">
@@ -56,7 +56,7 @@ export const TypewriterEffect = ({
   return (
     (<div
       className={cn(
-        "text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-center",
+        "text-6xl font-bold text-center",
         className
       )}>
       {renderWords()}
@@ -97,11 +97,11 @@ export const TypewriterEffectSmooth = ({
       (<div>
         {wordsArray.map((word, idx) => {
           return (
-            (<div key={`word-${idx}`} className="inline-block">
+            (<div key={`word-${idx}`} className={`inline-block ${word.className}`}>
               {word.text.map((char, index) => (
                 <span
                   key={`char-${index}`}
-                  className={cn(`dark:text-white text-black `, word.className)}>
+                  className={cn(``)}>
                   {char}
                 </span>
               ))}
@@ -113,7 +113,7 @@ export const TypewriterEffectSmooth = ({
   };
 
   return (
-    (<div className={cn("flex space-x-1 my-6", className)}>
+    (<div className={cn("flex space-x-1 my-6 justify-center", className)}>
       <motion.div
         className="overflow-hidden pb-2"
         initial={{
@@ -128,7 +128,7 @@ export const TypewriterEffectSmooth = ({
           delay: 1,
         }}>
         <div
-          className="text-xs sm:text-base md:text-xl lg:text:3xl xl:text-5xl font-bold"
+          className="text-6xl font-bold"
           style={{
             whiteSpace: "nowrap",
           }}>
@@ -149,7 +149,7 @@ export const TypewriterEffectSmooth = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "block rounded-sm w-[4px]  h-4 sm:h-6 xl:h-12 bg-blue-500",
+          "block rounded-sm w-[4px]  h-full bg-blue-500",
           cursorClassName
         )}></motion.span>
     </div>)

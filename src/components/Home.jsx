@@ -3,16 +3,24 @@ import {Button} from "@/components/ui/button.jsx";
 import {Link} from "react-router";
 import { ExternalLink } from 'lucide-react';
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip.jsx";
+import {TypewriterEffectSmooth} from "@/components/ui/typewriter-effect.jsx";
 
 export default function Home() {
+    const words = [
+        {
+            text: "Hello, World!",
+            className: "bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 to-indigo-500",
+        },
+    ];
     return <>
-        <nav className='text-lg font-semibold '>
+        <nav className='text-lg font-semibold'>
             Goto
         </nav>
         <div className='flex flex-col justify-center gap-5 h-full lg:mx-10 text-center'>
-            <h1 className='text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 to-indigo-500 '>
-                Hello, World!
-            </h1>
+            {/*<h1 className='text-6xl font-bold'>*/}
+            {/*    Hello, World!*/}
+            {/*</h1>*/}
+            <TypewriterEffectSmooth words={words}/>
             <p className='text-2xl capitalize'>
                 I am <b>Manoj Rayi</b>
                 <br/>
