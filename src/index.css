@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-blue-400 to-sky-500;
+  @apply dark:from-pink-500 dark:to-indigo-500
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

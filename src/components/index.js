@@ -59,4 +59,4 @@ const arr = [
 ];
 
 
-export {arr, Github, FileUser, Linkedin, Mail, Code, Instagram, Info}
+export {arr, Github, FileUser, Linkedin, Mail, Code, Instagram, Info,flask}

@@ -1,4 +1,4 @@
-import {arr , Github, FileUser, Linkedin, Mail, Code, Instagram, Info} from './'
+import {arr, Github, FileUser, Linkedin, Mail, Code, Instagram, Info, flask} from './'
 import {Button} from "@/components/ui/button.jsx";
 import {Link} from "react-router";
 import { ExternalLink } from 'lucide-react';
@@ -9,13 +9,11 @@ export default function Home() {
     const words = [
         {
             text: "Hello, World!",
-            className: "bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 to-indigo-500",
+            className: "gradient",
         },
     ];
     return <>
-        <nav className='text-lg font-semibold'>
-            Goto
-        </nav>
+
         <div className='flex flex-col justify-center gap-5 h-full lg:mx-10 text-center'>
             {/*<h1 className='text-6xl font-bold'>*/}
             {/*    Hello, World!*/}
@@ -65,7 +63,7 @@ export default function Home() {
                             <Tooltip>
                                 <TooltipTrigger asChild>
                                     <img
-                                        className={'h-12 mt-2 hover:scale-110 hover:shadow transition ease-in-out'}
+                                        className={`h-12 ${item.img === flask ? 'invert dark:invert-0' : ''} mt-2 hover:scale-110 hover:shadow transition ease-in-out`}
                                         key={index}
                                         src={item.img}
                                     />

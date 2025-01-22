@@ -10,9 +10,9 @@ export default function About() {
                     <CardHeader>
                         <CardTitle className="text-2xl font-bold">About Me</CardTitle>
                     </CardHeader>
-                    <CardContent className="text-gray-300">
+                    <CardContent >
                         <p className="text-lg ">
-                            Hi, I'm <b className={`text-white`}>Manoj Rayi</b>! I'm a final-year B.Tech student with a passion for
+                            Hi, I'm <b>Manoj Rayi</b>! I'm a final-year B.Tech student with a passion for
                             building robust and efficient software solutions. With expertise
                             in both frontend and backend technologies, I strive to create
                             seamless and user-friendly applications.
@@ -24,9 +24,9 @@ export default function About() {
                             Academic Background
                         </CardTitle>
                     </CardHeader>
-                    <CardContent className="text-gray-300">
+                    <CardContent>
                         <p>
-                            I'm pursuing my Bachelor of Technology from <b className={`text-white`}>Pragati Engineering College</b>, graduating in 2025. My academic focus includes
+                            I'm pursuing my Bachelor of Technology from <b>Pragati Engineering College</b>, graduating in 2025. My academic focus includes
                             coursework in cloud computing, deep learning, and software
                             engineering principles.
                         </p>
@@ -36,13 +36,13 @@ export default function About() {
                     <CardHeader>
                         <CardTitle className="text-xl font-bold">Technical Skills</CardTitle>
                     </CardHeader>
-                    <CardContent className="text-gray-300">
+                    <CardContent>
                         <ul className="list-disc list-inside space-y-2">
-                            <li><b className='font-semibold text-lg text-white'>Frontend</b>: React, Tailwind CSS, HTML, CSS</li>
-                            <li><b className='font-semibold text-lg text-white'>Backend</b>: Spring Boot, Flask</li>
-                            <li><b className='font-semibold text-lg text-white'>Database</b>: MySQL</li>
-                            <li><b className='font-semibold text-lg text-white'>ServiceNow Expertise</b>: Certified Developer and Administrator</li>
-                            <li><b className='font-semibold text-lg text-white'>Tools</b>: Git, Postman</li>
+                            <li><b className='font-semibold text-lg'>Frontend</b>: React, Tailwind CSS, HTML, CSS</li>
+                            <li><b className='font-semibold text-lg'>Backend</b>: Spring Boot, Flask</li>
+                            <li><b className='font-semibold text-lg'>Database</b>: MySQL</li>
+                            <li><b className='font-semibold text-lg'>ServiceNow Expertise</b>: Certified Developer and Administrator</li>
+                            <li><b className='font-semibold text-lg'>Tools</b>: Git, Postman</li>
                         </ul>
                     </CardContent>
                     <Separator />
@@ -52,7 +52,7 @@ export default function About() {
                             ServiceNow Expertise
                         </CardTitle>
                     </CardHeader>
-                    <CardContent className="text-gray-300">
+                    <CardContent>
                         <p>
                             I'm a certified ServiceNow Application Developer and System
                             Administrator. I specialize in ITSM processes, custom
@@ -66,7 +66,7 @@ export default function About() {
                     <CardHeader>
                         <CardTitle className="text-xl font-bold">Interests and Goals</CardTitle>
                     </CardHeader>
-                    <CardContent className="text-gray-300">
+                    <CardContent>
                         <p>
                             My professional goal is to contribute to impactful software
                             solutions that solve real-world problems. In my free time, I
