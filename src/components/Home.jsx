@@ -33,7 +33,7 @@ export default function Home() {
                     </a>
                 </li>
                 <li>
-                    <a href='https://drive.google.com/file/d/18exKNBmsy4a_IFRC12xdQrKMr00ysOUl/view'>
+                    <a href='https://drive.google.com/file/d/13WU2H9QqCELn3-O9cxj5hdPPwsid3kAE/view?usp=drivesdk'>
                         <FileUser className='hover:scale-105 size-10'/>
                     </a>
                 </li>
