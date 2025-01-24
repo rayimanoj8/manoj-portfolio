@@ -15,9 +15,7 @@ export default function Home() {
     return <>
 
         <div className='flex flex-col justify-center gap-5 h-full lg:mx-10 text-center'>
-            {/*<h1 className='text-6xl font-bold'>*/}
-            {/*    Hello, World!*/}
-            {/*</h1>*/}
+            
             <TypewriterEffectSmooth words={words}/>
             <p className='text-2xl capitalize'>
                 I am <b>Manoj Rayi</b>
