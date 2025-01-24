@@ -15,7 +15,9 @@ export default function Home() {
     return <>
 
         <div className='flex flex-col justify-center gap-5 h-full lg:mx-10 text-center'>
-            
+            {/*<h1 className='text-6xl font-bold'>*/}
+            {/*    Hello, World!*/}
+            {/*</h1>*/}
             <TypewriterEffectSmooth words={words}/>
             <p className='text-2xl capitalize'>
                 I am <b>Manoj Rayi</b>
@@ -61,7 +63,7 @@ export default function Home() {
                             <Tooltip>
                                 <TooltipTrigger asChild>
                                     <img
-                                        className={`h-12 ${item.img === flask ? 'invert dark:invert-0' : ''} mt-2 hover:scale-110 hover:shadow transition ease-in-out`}
+                                        className={`h-12 ${item.img === flask ? 'invert dark:invert-0' : ''} mt-2 hover:scale-110 hover:drop-shadow-2xl transition ease-in-out`}
                                         key={index}
                                         src={item.img}
                                     />
