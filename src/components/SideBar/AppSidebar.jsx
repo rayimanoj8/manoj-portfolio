@@ -1,4 +1,4 @@
-import {Home, Projector, CircleUser, Info} from "lucide-react"
+import { CircleUser, Home, Info, Projector } from "lucide-react";
 
 import {
     Sidebar,
@@ -6,12 +6,13 @@ import {
     SidebarGroup,
     SidebarGroupContent,
     SidebarGroupLabel,
-    SidebarMenu, SidebarMenuButton, SidebarMenuItem
+    SidebarMenu, SidebarMenuButton, SidebarMenuItem, useSidebar
 } from "@/components/ui/sidebar.jsx";
-import {Button} from "@/components/ui/button.jsx";
-import {Link} from "react-router";
+import { Link } from "react-router";
 
 export default function AppSideBar() {
+    const { toggleSidebar, isMobile } = useSidebar();
+
     const arr = [
         {
             label: "Home",
@@ -44,8 +45,15 @@ export default function AppSideBar() {
                             arr.map((item, index) => (
                                 <SidebarMenuItem key={index}>
                                     <SidebarMenuButton asChild>
-                                        <Link to={item.to}>
-                                            < item.icon />
+                                        <Link
+                                            to={item.to}
+                                            onClick={() => {
+                                                if (isMobile) {
+                                                    toggleSidebar();
+                                                }
+                                            }}
+                                        >
+                                            <item.icon />
                                             {item.label}
                                         </Link>
                                     </SidebarMenuButton>
