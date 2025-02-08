@@ -13,7 +13,7 @@ const projects = [
         technologies: ["Spring Boot", "WebSocket", "React","STOMP"],
         image: chat,
         github: "https://github.com/rayimanoj8/chatting-app",
-        liveDemo: "https://myapp-latest-3umz.onrender.com/",
+        liveDemo: "https://chat-mate-box.netlify.app/",
     },
     {
         title: "JWT Authentication System",

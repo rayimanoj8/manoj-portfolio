@@ -10,3 +10,5 @@
 </form>
 
 shadcn-ui-tutorial
+
+npx cap init manoj-portfolio com.manoj.portfolio
